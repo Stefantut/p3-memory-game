@@ -1,0 +1,201 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #ffffff url('../img/background.png'); /* Background pattern from Subtle Patterns */
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* H1 Properties */
+h1 {
+    font-size: 50px;
+    color: #13C4BC;
+    text-transform: capitalize;
+    -webkit-margin-after: 10px;
+    -webkit-margin-before: 15px;
+
+}
+
+/* H2 Properties */
+h2 {
+    text-transform: capitalize;
+    color: red;
+    font-size: 34px;
+}
+
+/* H3 Properties */
+h3 {
+    text-align: center;
+    -webkit-margin-after: 5px;
+    -webkit-margin-before: 5px;
+}
+
+/* Styles for the deck of cards */
+.deck {
+    width: 660px;
+    min-height: 680px;
+    background: linear-gradient(160deg, #02ccba 0%, #aa7ecd 100%);
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 12px 15px 20px 0 rgba(46, 61, 73, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 1em;
+}
+
+.deck .card {
+    height: 125px;
+    width: 125px;
+    background: #2e3d49;
+    font-size: 0;
+    color: #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.deck .card.open {
+    transform: rotateY(0);
+    background: #02b3e4;
+    cursor: default;
+}
+
+.deck .card.show {
+    font-size: 33px;
+}
+
+.deck .card.match {
+    cursor: default;
+    background: #02ccba;
+    font-size: 33px;
+}
+
+/* Styles for the Score Panel */
+.score-panel {
+    text-align: left;
+    width: 400px;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.score-panel .stars {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+    list-style: none;
+    display: inline-block;
+}
+/* Score panel coloured stars */
+.stars {
+    color: red;
+}
+/* Score panel restart button */
+.score-panel .restart {
+    float: right;
+    cursor: pointer;
+}
+.fa-repeat {
+    color: red;
+}
+
+/* Responsive image for Modal */
+.img-responsive {
+   max-width: 90%;
+   height: auto;
+ }
+
+ /* The Modal properties */
+.modal {
+    display: none;
+    text-align: center;
+    position: fixed; /* fixed position */
+    z-index: 1; /* Sit on top & in background */
+    left: 0;
+    top: 0;
+    width: 100%; /* full width */
+    height: 100%; /* full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* inside Modal- content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 5px;
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* Close Button */
+.close {
+    color: black;
+    float: right;
+    font-size: 26px;
+    padding: 5px;
+    margin: 5% auto;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.close:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Text paragraphs from modal */
+.modal-text {
+    text-transform: capitalize;
+    font-size: 22px;
+}
+
+/* Modal coloured stars */
+.modal-stars {
+    color: red;
+}
+/* Last paragraph from Modal */
+.playagain-text {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Footer Properties */
+.footer {
+    display: block;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 18px;
+}

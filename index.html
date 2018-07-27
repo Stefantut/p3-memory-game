@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Stefan's Matching Game</title>
+    <meta name="description" content="Matching Game">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/app.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!--Header section-->
+        <header>
+            <h1>stefan's matching game:</h1>
+        </header>
+
+        <!--Score panel section-->
+        <section class="score-panel">
+          <h3>Stopwatch: <time>00:00:00</time></h3>
+          	<ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul>
+
+        	<span class="moves">0</span> Move(s)
+
+            <div class="restart">
+        		<i class="fa fa-repeat"> Restart</i>
+        	</div>
+        </section>
+
+        <!--Deck images-->
+        <ul class="deck">
+           <li><img src='./img/image1.png' alt="first-image"></li>
+           <li><img src='./img/image1.png' alt="first-image"></li>
+           <li><img src='./img/image2.png' alt="second-image"></li>
+           <li><img src='./img/image2.png' alt="second-image"></li>
+           <li><img src='./img/image3.png' alt="third-image"></li>
+           <li><img src='./img/image3.png' alt="third-image"></li>
+           <li><img src='./img/image4.png' alt="fourth-image"></li>
+           <li><img src='./img/image4.png' alt="fourth-image"></li>
+           <li><img src='./img/image5.png' alt="fifth-image"></li>
+           <li><img src='./img/image5.png' alt="fifth-image"></li>
+           <li><img src='./img/image6.png' alt="six-image"></li>
+           <li><img src='./img/image6.png' alt="six-image"></li>
+           <li><img src='./img/image7.png' alt="seven-image"></li>
+           <li><img src='./img/image7.png' alt="seven-image"></li>
+           <li><img src='./img/image8.png' alt="eight-image"></li>
+           <li><img src='./img/image8.png' alt="eight-image"></li>
+        </ul>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="bestModal" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="myModalLabel">you won!<br></h2>
+                    <p class="modal-text"><span class="modal-moves">0</span> - total moves</p>
+                    <p class="modal-text"><span class="modal-time"><time>00:00:00</time></span> - final time counter</p>
+                    <p class="modal-text"><span class="modal-stars"></span> - final star rating</p>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="./img/you-won.jpg" alt="Congratulations">
+                    <p class="playagain-text">To play again, please press Close & Restart!</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <!--Footer Paragraph-->
+        <footer>
+          <p class="footer">@2018 - made for udacity nanodegree</p>
+        </footer>
+        
+  <!--Javascript link-->
+    <script src="js/app.js"></script>
+  </body>
+</html>
